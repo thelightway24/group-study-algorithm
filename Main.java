@@ -1,46 +1,30 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception {
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String[] condition = br.readLine().split(" ");
-        int totalPeople = Integer.parseInt(condition[0]);
-        int maxPeople = Integer.parseInt(condition[1]);
-        String[] studentInfo;
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String firstNums = br.readLine();
+		String secondNums = br.readLine();
 
-        int[] genderCollector = new int[totalPeople];
-        int[] gradeCollector = new int[totalPeople];
+		int[] nums = new int[26];
+		int[] nums2 = new int[26];
 
-        int girl = 0;
-        int man = 0;
+		for (int i = 0; i < firstNums.length(); i++) {
+			nums[firstNums.charAt(i) - 'a']++;
+		}
 
-        for (int i = 0; i < totalPeople; i++) {
-            studentInfo = br.readLine().split(" ");
-            genderCollector[i] = Integer.parseInt(studentInfo[0]);
-            gradeCollector[i] = Integer.parseInt(studentInfo[1]);
-        }
-
-        int roomCount = 0;
-        for(int i = 1; i <= 6; i++) {
-            for (int j = 0; j<totalPeople; j++) {
-                if (gradeCollector[j] == i) {
-                    if (genderCollector[j] == 0) {
-                        girl++;
-                    } else {
-                        man++;
-                    }
-                }
-            }
-            roomCount += (int) Math.ceil(girl/(maxPeople*1.0)) + (int) Math.ceil(man/(maxPeople*1.0));
-            girl = man = 0;
-        }
-
-        System.out.println(roomCount);
-
-    }
+		for (int i = 0; i < secondNums.length(); i++) {
+			nums2[secondNums.charAt(i) - 'a']++;
+		}
+		int count = 0;
+		for (int i = 0; i < nums.length; i++) {
+			count += (Math.abs(nums[i] - nums2[i]));
+		}
+		System.out.println(count);
+	}
 }
 
 
