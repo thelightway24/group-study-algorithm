@@ -14,6 +14,8 @@ public class Array3273두수의합 {
 		visitArray(br);
 	}
 
+	// 방문 배열에 대한 자세한 공부가 더 필요함
+	// 각 요소를 true, false로 바꾸며 O(1)의 시간 복잡도를 가지는 것이 특장점임
 	private static void twoPointer(BufferedReader br) throws IOException {
 		int max = Integer.parseInt(br.readLine());
 		String[] arr = br.readLine().split(" ");
