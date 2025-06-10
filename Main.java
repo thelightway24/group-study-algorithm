@@ -6,19 +6,16 @@ public class Main {
         solution();
     }
 
-    public static void solution() throws Exception {
-        try {
+    public static void solution() {
+        try (
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+            ) {
             StringTokenizer st = new StringTokenizer(br.readLine());
 
-            br.close();
             bw.flush();
-            bw.close();
         }catch (IOException e){
             e.printStackTrace();
         }
     }
 }
-
-
