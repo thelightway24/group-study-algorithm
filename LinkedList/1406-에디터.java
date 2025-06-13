@@ -42,8 +42,8 @@ public class Main {
 				}
 			}
 
-			for (Character c : list) {
-				bw.write(String.valueOf(c));
+			for (char c : list) {
+				bw.write(c);
 			}
 
 			bw.flush();
