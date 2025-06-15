@@ -21,6 +21,7 @@ public class Main {
         sb.append("<");
 
         int index = 0;
+
         while (!list.isEmpty()) {
             index = (index + targetNum - 1) % list.size();
             sb.append(list.remove(index));
