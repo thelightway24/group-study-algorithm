@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Array" />
       <excludeFolder url="file://$MODULE_DIR$/LinkedList" />
+      <excludeFolder url="file://$MODULE_DIR$/Stack" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
