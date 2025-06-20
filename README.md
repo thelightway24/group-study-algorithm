@@ -14,7 +14,7 @@
 | :--: | :--: | :--: |
 | 0x03 | [배열](workbook/0x03.md)| ![8/8](https://progress-bar.xyz/8/?scale=8&title=progress&width=500&color=babaca&suffix=/8) |
 | 0x04 | [연결 리스트](workbook/0x04.md)| ![3/3](https://progress-bar.xyz/3/?scale=3&title=progress&width=500&color=babaca&suffix=/3) |
-| 0x05 | [스택](workbook/0x05.md)| ![2/8](https://progress-bar.xyz/2/?scale=8&title=progress&width=500&color=babaca&suffix=/8) |
+| 0x05 | [스택](workbook/0x05.md)| ![4/8](https://progress-bar.xyz/4/?scale=8&title=progress&width=500&color=babaca&suffix=/8) |
 | 0x06 | [큐](workbook/0x06.md)| ![0/3](https://progress-bar.xyz/0/?scale=3&title=progress&width=500&color=babaca&suffix=/3) |
 | 0x07 | [덱](workbook/0x07.md)| ![0/4](https://progress-bar.xyz/0/?scale=4&title=progress&width=500&color=babaca&suffix=/4) |
 | 0x08 | [스택의 활용(수식의 괄호 쌍)](workbook/0x08.md)| ![0/5](https://progress-bar.xyz/0/?scale=5&title=progress&width=500&color=babaca&suffix=/5) |
