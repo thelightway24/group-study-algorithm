@@ -14,9 +14,9 @@
 | :--: | :--: | :--: |
 | 0x00 | [배열](workbook/0x03.md) | ![100%](https://progress-bar.xyz/8/?scale=8&title=progress&width=500&color=babaca&suffix=/8) |
 | 0x01 | [연결 리스트](workbook/0x04.md) | ![100%](https://progress-bar.xyz/3/?scale=3&title=progress&width=500&color=babaca&suffix=/3) |
-| 0x02 | [스택](workbook/0x05.md) | ![100%](https://progress-bar.xyz/0/?scale=8&title=progress&width=500&color=babaca&suffix=/8) |
-| 0x03 | [큐](workbook/0x06.md) | ![100%](https://progress-bar.xyz/0/?scale=3&title=progress&width=500&color=babaca&suffix=/3) |
-| 0x04 | [덱](workbook/0x07.md) | ![100%](https://progress-bar.xyz/0/?scale=4&title=progress&width=500&color=babaca&suffix=/4) |
+| 0x02 | [스택](workbook/0x05.md) | ![100%](https://progress-bar.xyz/6/?scale=8&title=progress&width=500&color=babaca&suffix=/8) |
+| 0x03 | [큐](workbook/0x06.md) | ![100%](https://progress-bar.xyz/3/?scale=3&title=progress&width=500&color=babaca&suffix=/3) |
+| 0x04 | [덱](workbook/0x07.md) | ![100%](https://progress-bar.xyz/3/?scale=4&title=progress&width=500&color=babaca&suffix=/4) |
 | 0x05 | [스택의 활용(수식의 괄호 쌍)](workbook/0x08.md) | ![100%](https://progress-bar.xyz/0/?scale=5&title=progress&width=500&color=babaca&suffix=/5) |
 | 0x06 | [BFS](workbook/0x09.md) | ![100%](https://progress-bar.xyz/0/?scale=30&title=progress&width=500&color=babaca&suffix=/30) |
 | 0x07 | DFS (문제집 X) | |
