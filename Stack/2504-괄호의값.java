@@ -85,6 +85,10 @@ public class Main {
 	// 결국 누적합이라고 한다. 숫자는 2와 3으로만 시작.
 	// 문제 풀기 시작하면서 제일 힘든 문제 중 하나인듯
 
+	// 핵심은 2 * (2 + (3*3))을  (2*2) + (2*3*3)으로 생각할 수 있는지 사고력
+	// + 스택이란 재귀(중첩)적 자료구조를 쓰면서 그 중첩 처리를 어떻게 만들지 생각하는 것이다.
+	// 근데 이건 모든 케이스를 밑의 solution2처럼 나열해놓고 디버깅을 하면서 답을 추출하고 추후에 정리하는게 맞는 방법같다. 한번에 도출해낼 수가 없었음.
+
 	public static void solution2() {
 		try (
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
