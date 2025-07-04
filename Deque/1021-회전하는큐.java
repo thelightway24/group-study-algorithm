@@ -53,4 +53,4 @@ public class Main {
 }
 
 // 계속 값이 빠지는 순환큐에서 목표 숫자가 앞에 가까운지 뒤에 가까운지 판단하는 방법이 가장 중요한 문제.
-// LinkedListrk Deque의 구현체이기 때문에 LinkedList로 풀면 불필요하게 최대 m번 ArrayList를 선언할 필요가 없었다..
+// LinkedList가 Deque의 구현체이기 때문에 LinkedList로 풀면 불필요하게 최대 m번 ArrayList를 선언할 필요가 없었다..

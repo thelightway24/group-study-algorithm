@@ -7,6 +7,9 @@
       <excludeFolder url="file://$MODULE_DIR$/Array" />
       <excludeFolder url="file://$MODULE_DIR$/LinkedList" />
       <excludeFolder url="file://$MODULE_DIR$/Stack" />
+      <excludeFolder url="file://$MODULE_DIR$/Queue" />
+      <excludeFolder url="file://$MODULE_DIR$/Deque" />
+      <excludeFolder url="file://$MODULE_DIR$/Bronze" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
