@@ -16,6 +16,7 @@ public class Main {
 			int n = Integer.parseInt(st.nextToken());
 			int m = Integer.parseInt(st.nextToken());
 			int v = Integer.parseInt(st.nextToken());
+			boolean[][] visited = new boolean[n][m];
 
 			for (int i = 0; i < m; i++) {
 				st = new StringTokenizer(br.readLine());
