@@ -28,4 +28,12 @@ public class Main {
 			e.printStackTrace();
 		}
 	}
+
+	static void dfs(){
+
+	}
+
+	static void bfs(){
+
+	}
 }
