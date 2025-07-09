@@ -10,6 +10,7 @@
       <excludeFolder url="file://$MODULE_DIR$/Queue" />
       <excludeFolder url="file://$MODULE_DIR$/Deque" />
       <excludeFolder url="file://$MODULE_DIR$/Bronze" />
+      <excludeFolder url="file://$MODULE_DIR$/DFS" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
