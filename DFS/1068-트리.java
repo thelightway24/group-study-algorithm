@@ -3,7 +3,6 @@ import java.util.*;
 
 public class Main {
 	static int ans;
-	static boolean[] visited;
 	static List<Integer>[] graph;
 
 	public static void main(String[] args) throws Exception {
@@ -23,24 +22,27 @@ public class Main {
 			}
 
 			// 이건 단방향이라서 이전과 같은 구조를 가질 필요가 없다.
+			// 몰랐는데 트리 구조와 같은 단방향이면 방문 배열이 필요없다.
 			StringTokenizer st = new StringTokenizer(br.readLine());
+			int root = -1;
 			for (int i = 0; i < n; i++) {
 				int parent = Integer.parseInt(st.nextToken());
-				if (parent > -1) {
+				if (parent == -1) {
+					root = i;
+				} else {
 					graph[parent].add(i);
 				}
 			}
 
 			int deletedNode = Integer.parseInt(br.readLine());
-			if (deletedNode == 0) {
+			if (deletedNode == root) {
 				bw.write("0");
 				bw.flush();
 				return;
 			}
 
-			visited = new boolean[n];
 			ans = 0;
-			dfs(0, deletedNode);
+			dfs(root, deletedNode); // 무조건 root부터 탐색 시작.
 
 			bw.write(ans + "");
 
@@ -51,15 +53,14 @@ public class Main {
 	}
 
 	static void dfs(int start, int deletedNode) {
-		visited[start] = true;
-
-		if (!graph[start].isEmpty()) {
-			for (int next : graph[start]) {
-				if (!visited[next] && next != deletedNode) {
-					dfs(next, deletedNode);
-				}
-			}
-		} else {
+		boolean isLeaf = true;
+		for (int next : graph[start]) {
+			if (next == deletedNode)
+				continue;
+			isLeaf = false;
+			dfs(next, deletedNode);
+		}
+		if (isLeaf) {
 			ans++;
 		}
 	}
