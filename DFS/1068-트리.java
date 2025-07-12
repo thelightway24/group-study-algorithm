@@ -55,8 +55,7 @@ public class Main {
 	static void dfs(int start, int deletedNode) {
 		boolean isLeaf = true;
 		for (int next : graph[start]) {
-			if (next == deletedNode)
-				continue;
+			if (next == deletedNode) continue;
 			isLeaf = false;
 			dfs(next, deletedNode);
 		}
