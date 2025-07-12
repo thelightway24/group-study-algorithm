@@ -5,32 +5,46 @@ import java.util.Deque;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
-        Deque<Integer> queue = new ArrayDeque<>();
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int n = Integer.parseInt(br.readLine());
+		int[] parent = new int[n];
+		String[] input = br.readLine().split(" ");
+		int delete = Integer.parseInt(br.readLine());
 
-        int orderNumber = Integer.parseInt(br.readLine());
+		if (delete == 0) {
+			System.out.println(0);
+			return;
+		}
 
-        while (orderNumber-- > 0) {
-            String order = br.readLine();
+		for (int i = 0; i < n; i++) {
+			if (i == delete) {
+				parent[i] = -2;
+			} else {
+				int p = Integer.parseInt(input[i]);
+				if (p != -1 && parent[p] == -2) {
+					parent[i] = -2;
+				} else {
+					parent[i] = p;
+				}
+			}
+		}
 
-            if (order.startsWith("push")) {
-                int targetInt = Integer.parseInt(order.substring(5));
-                queue.addLast(targetInt);
-            } else if (order.equals("pop")) {
-                sb.append(queue.isEmpty() ? -1 : queue.removeFirst()).append('\n');
-            } else if (order.equals("size")) {
-                sb.append(queue.size()).append('\n');
-            } else if (order.equals("empty")) {
-                sb.append(queue.isEmpty() ? 1 : 0).append('\n');
-            } else if (order.equals("front")) {
-                sb.append(queue.isEmpty() ? -1 : queue.peekFirst()).append('\n');
-            } else if (order.equals("back")) {
-                sb.append(queue.isEmpty() ? -1 : queue.peekLast()).append('\n');
-            }
+		int leafCount = 0;
+		for (int i = 0; i < n; i++) {
+			if (parent[i] == -2) continue;
+			boolean isLeaf = true;
+			for (int j = 0; j < n; j++) {
+				if (parent[j] == i) {
+					isLeaf = false;
+					break;
+				}
+			}
+			if (isLeaf) {
+				leafCount++;
+			}
+		}
 
-        }
-        System.out.print(sb);
-    }
+		System.out.println(leafCount);
+	}
 }
