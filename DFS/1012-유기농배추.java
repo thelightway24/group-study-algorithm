@@ -24,6 +24,7 @@ public class Main {
 					int x = Integer.parseInt(st1.nextToken());
 					int y = Integer.parseInt(st1.nextToken());
 
+
 				}
 
 			}
