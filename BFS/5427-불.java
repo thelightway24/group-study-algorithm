@@ -27,24 +27,24 @@ public class Main {
 				w = Integer.parseInt(st.nextToken()); // 넓이
 				h = Integer.parseInt(st.nextToken()); // 높이
 
-				map = new char[w][h];
+				map = new char[h][w];
 				fireTime = new int[h][w];
 				sangTime = new int[h][w];
 				fireQueue = new ArrayDeque<>();
 				sangQueue = new ArrayDeque<>();
 
-				for (int i = 0; i < h; i++) {
+				for (int j = 0; j < h; j++) {
 					String line = br.readLine();
-					for (int j = 0; j < w; j++) {
-						map[i][j] = line.charAt(j);
-						fireTime[i][j] = -1;
-						sangTime[i][j] = -1;
-						if (map[i][j] == '*') {
-							fireQueue.add(new int[]{i, j});
-							fireTime[i][j] = 0;
-						} else if (map[i][j] == '@') {
-							sangQueue.add(new int[]{i, j});
-							sangTime[i][j] = 0;
+					for (int k = 0; k < w; k++) {
+						map[j][k] = line.charAt(k);
+						fireTime[j][k] = -1;
+						sangTime[j][k] = -1;
+						if (map[j][k] == '*') {
+							fireQueue.add(new int[]{j, k});
+							fireTime[j][k] = 0;
+						} else if (map[j][k] == '@') {
+							sangQueue.add(new int[]{j, k});
+							sangTime[j][k] = 0;
 						}
 					}
 				}
